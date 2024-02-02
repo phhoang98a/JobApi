@@ -3,6 +3,9 @@ from jobspy import scrape_jobs
 import pandas as pd
 app = Flask(__name__)
 
+@app.route("/")
+def hello():
+  return "HELLO"
 
 @app.route("/job", methods=['POST'])
 def job():
