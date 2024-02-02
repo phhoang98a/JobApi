@@ -14,7 +14,7 @@ def job():
   location = request.json['location']
 
   jobs: pd.DataFrame = scrape_jobs(
-      site_name=["indeed", "linkedin", "glassdoor"],
+      site_name=["indeed"],
       search_term=job_title,
       location=location,
       results_wanted=10,
